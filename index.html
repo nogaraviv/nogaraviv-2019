@@ -4,16 +4,9 @@ layout: default
 {% if paginator.page == 1 %}
 <section class="hero">
   <div class="container">
-    <h1 class="logo">
-      <img src="/assets/nav.svg" alt="Nick Aversano" width="72px" height="72px" />
-    </h1>
-    <!--<div class="tagline-group">
-      <h2 class="tagline">Some generic inspirational quote.</h2>
-      <div class="tagline-byline">&mdash; Unknown</div>
-    </div>-->
-    <!--<div class="action">
-      <a class="btn">do something</a>
-    </div>-->
+    <h2 class="logo">
+        Hey there.
+    </h2>
   </div>
 </section>
 {% endif %}
@@ -30,7 +23,7 @@ layout: default
     <a href="{% if post.link_only %}{{ post.link }}{% else %}{{ post.url | preprend: site.baseurl }}{% endif %}">
       {% assign color = post.categories[0] %}{% assign color = site.tag_colors[color] %}
       {% if post.color %}{% assign color = post.color %}{% endif %}
-      <div class="project" style="background-color:#{{ color }};">
+      <div class="project">
         {% comment %} post.categories | join: ", " | titleize {% endcomment %}
         <div class="tags">{{ post.date | date: "%Y" }}</div>
         <h3 class="title">{{ post.title }}</h3>

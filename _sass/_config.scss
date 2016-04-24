@@ -3,15 +3,16 @@ $light-gray: #eee;
 $dark-gray: #221e1f;
 $gray: lighten($dark-gray, 15);
 
+$primary: red;
 $red: #E74C3C;
 $blue: #3498DB;
 $green: #2ECC71;
-$yellow: #F39C12;
-$purple: #9B59B6;
-$silver: #95A5A6;
-$turquoise: #1ABC9C;
+//$yellow: #F39C12;
+//$purple: #9B59B6;
+//$silver: #95A5A6;
+//$turquoise: #1ABC9C;
 
 // fonts
-$base-font: sans-serif;
-$body-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$header-font: 'Open Sans', sans-serif;
+$base-font: 'Graphik', sans-serif;
+$body-font: $base-font;
+$header-font: $base-font;

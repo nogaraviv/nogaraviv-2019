@@ -12,6 +12,14 @@ $max-width: em(1140);
 @import "config";
 @import "utils";
 
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/Graphik-Regular.eot');
+    src: url('../fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Graphik-Regular.woff') format('woff'), url('../fonts/Graphik-Regular.ttf') format('truetype'), url('../fonts/Graphik-Regular.svg#Graphik_Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 // device sizes
 $desktop: new-breakpoint(min-width 1141px 10);
 $tablet: new-breakpoint(max-width 1140px 8);
@@ -33,6 +41,16 @@ body, input {
 
 body {
   color: $dark-gray;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+
+::-moz-selection {
+  background: black;
+  color: white;
 }
 
 a {
@@ -201,7 +219,7 @@ h1.logo {
 }
 
 .feature {
-  background: $red;
+  background: $green;
   padding: 2em 0;
   margin-bottom: 4em;
   
@@ -277,14 +295,6 @@ ul.tags {
         background: $red;
         color: white;
         text-decoration: none;
-        
-        &.design { background: $red; }
-        &.development { background: $blue; }
-        &.video { background: $green; }
-        &.yellow { background: $yellow; }
-        &.purple { background: $purple; }
-        &.silver { background: $silver; }
-        &.turquoise { background: $turquoise; }
       }
     }
   }
@@ -316,6 +326,10 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+.center {
+    text-align: center;
 }
 
 .page-content {

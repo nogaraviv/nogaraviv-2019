@@ -19,4 +19,4 @@ Drone flew autonomously with an overhead OpenCV tracking camera and a Node.JS co
 
 <iframe width="696" height="392" src="//player.vimeo.com/video/152479854" frameborder="0" allowfullscreen></iframe>
 
-<a href="http://drone.gotechnica.org" class="btn secondary" target="_blank" style="background: #015DC4;"><span class="fa fa-link"></span>View Project Website</a>
+<a href="http://drone.gotechnica.org" class="btn secondary" target="_blank"><span class="fa fa-link"></span>View Project Website</a>

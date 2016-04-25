@@ -1,20 +1,11 @@
 /* TEAM */
-  Developer: Nick Aversano
+  Developer & Designer: Nick Aversano
   Twitter: @nickaversano
   Location: NJ, USA, Earth
-
-/* THANKS */
-  Inspiration: startupshell.org
-  Twitter: @startup_shell
-  Location: College Park, MD
-
-  Inspiration: jhil.co
-  Twitter: @jhilmd
-  
-  Inspiration: hugeinc.com
+  (Design tweaks by Noga Raviv)
 
 /* SITE */
-  Last updated: 4/3/15
+  Last updated: 4/23/15
   Standards: HTML5, CSS3
   Components: YouMightNotNeedjQuery
   Software:

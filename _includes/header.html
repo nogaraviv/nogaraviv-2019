@@ -1,9 +1,8 @@
 <div id="menu" class="menu">
+ <!-- Mobile Menu -->
   <nav>
     <ul class="menu-links">
       <li><a href="{{ site.baseurl }}/">{{ site.title }}</a></li>
-      <li><a href="https://medium.com/@nickaversano/learn-for-funs-sake-8d39f972b76a" target="_blank">My Story</a></li>
-      <li><a href="/resume15.pdf" target="_blank">Résumé</a></li>
       {% for page in site.pages %}
         {% if page.title %}
         <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -14,13 +13,18 @@
 </div>
 <header>
   <div id="toggle" class="menu-link"><a href="javascript:void(0)"><span></span></a></div>
+  <!-- Desktop Menu -->
   <div class="menu">
    <nav>
       <ul class="menu-links">
         <li><a href="{{ site.baseurl }}/">{{ site.title }}</a></li>
-        <li><a href="https://medium.com/@nickaversano/learn-for-funs-sake-8d39f972b76a" target="_blank">My Story</a></li>
-        <li><a href="/resume15.pdf" target="_blank">Résumé</a></li>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
       </ul>
    </nav>
   </div>
+  {% include social.html %}
 </header>

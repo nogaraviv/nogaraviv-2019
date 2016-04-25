@@ -24,8 +24,7 @@ layout: default
       {% assign color = post.categories[0] %}{% assign color = site.tag_colors[color] %}
       {% if post.color %}{% assign color = post.color %}{% endif %}
       <div class="project">
-        {% comment %} post.categories | join: ", " | titleize {% endcomment %}
-        <div class="tags">{{ post.date | date: "%Y" }}</div>
+        <div class="tags">{{ post.tags  | join: ", " }}</div>
         <h3 class="title">{{ post.title }}</h3>
         {% if post.headline %}<div class="desc">{{ post.headline }}</div>{% endif %}
       </div>

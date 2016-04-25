@@ -67,7 +67,7 @@ header {
   @include clearfix;
   width:100%;
   padding: 2em 4em 2em;
-  background: $light-gray;
+  background: #F5F5F5;
   font-size: 1.25em;
 }
 
@@ -130,8 +130,8 @@ div.container {
 }
 
 .hero {
-  background: $light-gray;
-  padding: 5em 0 8em 0;
+  background: #F5F5F5;
+  padding: 7em 0 11em 0;
   text-align: center;
   
   .tagline-group {
@@ -182,9 +182,10 @@ h1.logo {
   
   .project {
     color: #000;
-    background: #99FB8F;
-    padding: 2.5em;
-    margin-bottom: 1.3em;
+    background: #E65660;
+    padding: 4em;
+    margin-bottom: 1.5em;
+    /*border: 3px solid #3E3E3E;*/
     
     .tags {
       opacity: 0.6;
@@ -197,7 +198,7 @@ h1.logo {
       font-size: 2.5em;
       font-weight: bold;
       color: white;
-      padding: 0.1em 0 0.3em 0;
+      padding: 0.35em 0 0.3em 0;
     }
     
     .desc {
@@ -216,7 +217,7 @@ h1.logo {
 }
 
 .feature {
-  background: $green;
+  color: black;
   padding: 2em 0;
   margin-bottom: 4em;
   
@@ -225,7 +226,7 @@ h1.logo {
   }
   
   .title {
-    color: white;
+    color: black;
     font-size: 2.5em;
     margin: 0;
   }
@@ -330,6 +331,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: $base-font;
 }
 
 .center {

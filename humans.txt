@@ -1,11 +1,6 @@
 /* TEAM */
-  Developer & Designer: Nick Aversano
-  Twitter: @nickaversano
-  Location: NJ, USA, Earth
-  (Design tweaks by Noga Raviv)
-  
-  Twitter: @nogaraviv
-  Location: Earth
+ Code and themed by Nick Aversano
+ Twitter: @nickaversano
 
 /* SITE */
   Last updated: 4/23/15

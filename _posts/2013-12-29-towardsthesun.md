@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  Steven Corn Furs
-headline: e-commerce website
+title:  Towards the Sun
+headline: Ecommerce shop that sold my handmade clay bowls
 date:   2013-12-29 01:38:07
-categories:
-  - development
 color: 1ABC9C
-link: http://www.stevencorn.com/
+link: http://www.shoptowardsthesun.com
 link_text: View website
 link_only: yes
 ---

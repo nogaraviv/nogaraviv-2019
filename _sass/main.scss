@@ -131,7 +131,7 @@ div.container {
 
 .hero {
   background: #F5F5F5;
-  padding: 7em 0 11em 0;
+  padding: 4em 0 9em 0;
   text-align: center;
   
   .tagline-group {
@@ -169,6 +169,10 @@ div.content {
 }
 h1.logo {
   margin: 0;
+}
+
+h2.logo{
+  padding-top: 6px;
 }
 
 .projects {
@@ -259,11 +263,6 @@ h1.logo {
       vertical-align: middle;
       margin-bottom: 2em;
       margin-top: 2em;
-      
-      &.shadow {
-        box-shadow: 0 1px 8px rgba(0,0,0,0.15);
-      }
-      @extend .shadow;
     }
     
     h1, h2, h3, h4, h5, h6 {

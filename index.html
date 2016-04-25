@@ -4,6 +4,9 @@ layout: default
 {% if paginator.page == 1 %}
 <section class="hero">
   <div class="container">
+   <h1 class="logo">
+      <img src="/images/sun-icon.svg" alt="Noga Raviv" width="72px" height="72px" />
+    </h1>
     <h2 class="logo">
         Hi, I'm Noga. I'm a digital designer that likes to get crafty.
     </h2>
@@ -21,9 +24,8 @@ layout: default
     {% endif %}
     {% for post in paginator.posts %}
     <a href="{% if post.link_only %}{{ post.link }}{% else %}{{ post.url | preprend: site.baseurl }}{% endif %}">
-      {% assign color = post.categories[0] %}{% assign color = site.tag_colors[color] %}
       {% if post.color %}{% assign color = post.color %}{% endif %}
-      <div class="project">
+      <div class="project" style="background-color: #{{ color }};">
         <div class="tags">{{ post.tags  | join: ", " }}</div>
         <h3 class="title">{{ post.title }}</h3>
         {% if post.headline %}<div class="desc">{{ post.headline }}</div>{% endif %}

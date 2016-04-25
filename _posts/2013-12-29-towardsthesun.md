@@ -3,7 +3,7 @@ layout: post
 title:  Towards the Sun
 headline: Ecommerce shop that sold my handmade clay bowls
 date:   2013-12-29 01:38:07
-color: 1ABC9C
+color: FF7B85
 link: http://www.shoptowardsthesun.com
 link_text: View website
 ---

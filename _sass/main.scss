@@ -249,6 +249,7 @@ h2.logo{
   .content {
     max-width: 740px;
     padding: 0 1em;
+    text-align: center;
     
     p {
       line-height: 1.6em;
@@ -313,7 +314,7 @@ a .fa-link {
 }
 
 footer {
-  background: $dark-gray;
+  background: #F5F5F5;
   color: $light-gray;
   padding: 4em;
   
@@ -335,6 +336,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   font-family: $base-font;
+  text-align: center;
 }
 
 .center {
@@ -353,8 +355,8 @@ body {
   background: $dark-gray;
   color: $light-gray;
   display: inline-block;
-  border-radius: 5px;
-  font-size: 1.1em;
+  border-radius: 1px;
+  font-size: 1.8em;
   font-weight: bold;
   position: relative;
   
@@ -373,7 +375,7 @@ body {
   &.text {
     background: transparent;
     border: 3px solid transparent;
-    color: $dark-gray;
+    color: #3B3C40;
     
     &:hover {
       text-decoration: underline;

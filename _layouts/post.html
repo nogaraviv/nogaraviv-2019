@@ -12,8 +12,17 @@ layout: default
     {% if page.link %}
     <p><a href="{{ page.link }}" class="btn secondary" target="_blank"><span class="fa fa-link"></span>{% if page.link_text %}{{ page.link_text }}{% else %}View project{% endif %}</a></p>
     {% endif %}
-    <p class="center">
-      <a href="{{ site.url }}" class="btn secondary">See more projects</a>
-    </p>
   </div>
 </section>
+<footer>
+  <div class="container">
+      <div class="pagination">
+        {% if page.previous.url %}
+        <a href="{{page.previous.url}}" class="btn text prev">{{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a href="{{page.next.url}}" class="btn text next">{{page.next.title}}</a>
+      {% endif %}
+    </div>
+  </div>
+</footer>

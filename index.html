@@ -25,7 +25,8 @@ layout: default
     {% for post in paginator.posts %}
     <a href="{% if post.link_only %}{{ post.link }}{% else %}{{ post.url | preprend: site.baseurl }}{% endif %}">
       {% if post.color %}{% assign color = post.color %}{% endif %}
-      <div class="project" style="background-color: #{{ color }};">
+      {% if post.image %}{% assign image = post.image %}{% endif %}
+      <div class="project" style="background-image: url({{ image }});">
         <div class="tags">{{ post.tags  | join: ", " }}</div>
         <h3 class="title">{{ post.title }}</h3>
         {% if post.headline %}<div class="desc">{{ post.headline }}</div>{% endif %}

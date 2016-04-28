@@ -4,7 +4,7 @@ title:  Towards the Sun
 headline: Ecommerce shop that sold my handmade clay bowls
 date:   2012-02-29 01:38:07
 color: FF7B85
-image: images/Towardsthesun/tts-01.jpeg
+image: /images/Towardsthesun/towardsthesunpattern.png
 link: http://www.shoptowardsthesun.com
 link_text: View website
 ---

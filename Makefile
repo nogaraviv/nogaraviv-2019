@@ -2,4 +2,4 @@ default:
 	webpack -p --progress
 
 deploy: default
-	cp CNAME bin/ && ./deploy.sh bin/
+	echo "nogaraviv.com" >> bin/CNAME && ./deploy.sh bin/

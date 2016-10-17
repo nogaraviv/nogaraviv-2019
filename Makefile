@@ -1,2 +1,5 @@
-all:
-	webpack -p --progress && ./deploy.sh bin/
+default:
+	webpack -p --progress
+
+deploy: default
+	./deploy.sh bin/

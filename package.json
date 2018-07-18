@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rm -rf bin && webpack -p --progress",
+    "deploy": "npm run build && git subtree push --prefix bin origin gh-pages",
     "start": "webpack-dev-server --inline --content-base bin/ --history-api-fallback"
   },
   "author": "",

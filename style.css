@@ -92,6 +92,7 @@ h3 {
 
 p {
   font-size: 14px;
+  line-height:1.4;
 }
 
 a {
@@ -122,7 +123,7 @@ h4 > a:hover,
 h5 > a:hover,
 h6 > a:hover,
 p > a:hover {
-  color: #747979;
+  color: #3A3E3E;
   text-decoration: none;
 }
 

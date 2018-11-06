@@ -62,17 +62,26 @@ table {
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Inter-UI';
+  src: url('/fonts/Inter-UI-MediumItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 /******************************************************************************\
  * Noga's CSS
 \******************************************************************************/
 
 body {
+  padding: 0px 24px;
   margin: 96px auto 150px auto;
   width: 100%;
   max-width: 780px;
   background-color: #D0EADC;
   color: #4E5050;
   font-family: 'Inter-UI', Helvetica;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -92,7 +101,11 @@ h3 {
 
 p {
   font-size: 14px;
-  line-height:1.4;
+  line-height:1.45;
+}
+
+i {
+  font-style: italic;
 }
 
 a {
@@ -128,20 +141,20 @@ p > a:hover {
 }
 
 .title {
-  line-height: 1.69;
+  line-height: 1.6;
 }
 
 .section {
-  margin-bottom: 56px;
+  margin-bottom: 64px;
 }
 
 .section > .header {
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 42px;
 }
 
 .section > .bar {
-  margin-top: 48px;
+  margin-top: 64px;
 
   width: 52px;
   border-top: 1px solid #1a1a1a;
@@ -175,3 +188,12 @@ p > a:hover {
   margin-top: 60px;
 }
 
+.subtitle {
+  margin-top: 12px;
+  }
+
+@media (max-width: 600px) {
+.subtitle {
+margin-top: 32px;
+}
+}

@@ -167,10 +167,11 @@ p > a:hover {
   line-height: 1.6;
 }
 
-}
-
 .section {
   margin-bottom: 80px;
+}
+.section:last-child {
+  margin-bottom: 0px;
 }
 
 .section > .header {
@@ -189,19 +190,6 @@ cursor: pointer;
   color: #7d8783;
 }
 
-.section > .bar {
-  width: 52px;
-  border-top: 1px solid #D0EADC;
-}
-
-.section:last-child {
-  margin-bottom: 0px;
-}
-
-.section:last-child > .bar {
-  display: none;
-}
-
 .section > .subheader {
   margin-top: 24px;
   font-size: 28px;
@@ -213,13 +201,13 @@ cursor: pointer;
 }
 
 .prototype {
-align-self: center;
-max-width: 240px;
+  align-self: center;
+  max-width: 240px;
 }
 
 .phone {
-align-self: center;
-max-width: 300px;
+  align-self: center;
+  max-width: 300px;
 }
 
 .content > * {
@@ -257,6 +245,21 @@ max-width: 300px;
 .image {
   width: 100%;
   height: auto;
+}
+
+.list {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.list > li {
+  font-size: 16px;
+  line-height:1.45;
+  margin-bottom: 20px;
+}
+
+.list > li:last-child {
+  margin-bottom: 0px;
 }
 
 @media (max-width: 600px) {

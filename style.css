@@ -195,6 +195,10 @@ cursor: pointer;
   font-size: 28px;
 }
 
+.footer {
+  margin-top: 80px;
+}
+
 .content {
   display: flex;
   flex-direction: column;

@@ -117,6 +117,10 @@ h3 {
   font-family: 'Inter-UI';
 }
 
+h4 {
+  font-size: 30px;
+}
+
 p {
   font-size: 16px;
   line-height:1.45;
@@ -135,6 +139,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 h1 > a,
 h2 > a,
@@ -162,6 +167,8 @@ p > a:hover {
   line-height: 1.6;
 }
 
+}
+
 .section {
   margin-bottom: 80px;
 }
@@ -171,15 +178,18 @@ p > a:hover {
   margin-bottom: 42px;
 }
 
+.section > .logo {
+text-decoration: none;
+cursor: pointer;
+}
+
 .section > .role {
-  text-transform: uppercase;
-  margin-top: 16px;
-  margin-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: #7d8783;
 }
 
 .section > .bar {
-  margin-top: px;
-
   width: 52px;
   border-top: 1px solid #D0EADC;
 }
@@ -195,6 +205,29 @@ p > a:hover {
 .section > .subheader {
   margin-top: 24px;
   font-size: 28px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.prototype {
+align-self: center;
+max-width: 240px;
+}
+
+.phone {
+align-self: center;
+max-width: 300px;
+}
+
+.content > * {
+  margin: 20px 0;
+}
+
+.content > *:last-child {
+  margin-bottom: 0px;
 }
 
 .project {
@@ -222,8 +255,6 @@ p > a:hover {
 }
 
 .image {
-  margin-top: 24px;
-  margin-bottom: 24px;
   width: 100%;
   height: auto;
 }

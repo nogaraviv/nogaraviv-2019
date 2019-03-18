@@ -84,6 +84,26 @@ table {
   url("fonts/Inter-UI-Bold.woff?v=3.0") format("woff");
 }
 
+@font-face {
+  font-family: 'SanFranciscoDisplay-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/SanFranciscoDisplay-Regular.otf"),
+}
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Bold';
+  font-style: bold;
+  font-weight: 700;
+  src: url("/fonts/SanFranciscoDisplay-Bold.otf"),
+}
+
+@font-face {
+  font-family: 'RobotoMono-Light';
+  font-style: bold;
+  font-weight: 700;
+  src: url("/fonts/RobotoMono-Light.ttf"),
+}
 
 /******************************************************************************\
  * Noga's CSS
@@ -94,31 +114,33 @@ body {
   margin: 96px auto 150px auto;
   width: 100%;
   max-width: 780px;
-  background-color: #D0EADC;
-  color: #4E5050;
-  font-family: 'Inter-UI', Helvetica;
+  background-color: #FBF7F2;
+  color: #3C3C38;
+  font-family: 'SanFranciscoDisplay-Regular', Helvetica;
   box-sizing: border-box;
 }
 
 h1 {
-  font-size: 30px;
-  font-family: 'Inter-UI';
+  font-size: 34px;
+  font-family: 'SanFranciscoDisplay-Bold';
   letter-spacing: -0.015em;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 12px;
-  letter-spacing: 0.6px;
-  letter-spacing: 1px;
+  font-size: 14px;
+  color: #F4927A;
+  font-family: 'RobotoMono-Light';
 }
 
 h3 {
   font-size: 16px;
-  font-family: 'Inter-UI';
+  font-family: 'SanFranciscoDisplay-Bold';
+  font-weight: bold;
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 p {
@@ -159,12 +181,12 @@ h4 > a:hover,
 h5 > a:hover,
 h6 > a:hover,
 p > a:hover {
-  color: #3A3E3E;
+  color: #3C3C38;
   text-decoration: none;
 }
 
 .title {
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .section {
@@ -175,7 +197,6 @@ p > a:hover {
 }
 
 .section > .header {
-  text-transform: uppercase;
   margin-bottom: 42px;
 }
 
@@ -187,7 +208,7 @@ cursor: pointer;
 .section > .role {
   margin-top: 32px;
   margin-bottom: 16px;
-  color: #7d8783;
+  color: #3C3C38;
 }
 
 .section > .subheader {
@@ -231,7 +252,7 @@ cursor: pointer;
 }
 
 .project > .description {
-  color: #7d8783;
+  color: #3C3C38;
 }
 
 .project:last-child {

@@ -50,7 +50,7 @@ table {
 /******************************************************************************\
  * Fonts
 \******************************************************************************/
-@import url('https://rsms.me/inter/inter-ui.css');
+/**@import url('https://rsms.me/inter/inter-ui.css');
 
 @font-face {
   font-family: 'Inter-UI';
@@ -82,7 +82,7 @@ table {
   font-weight: 700;
   src: url("fonts/Inter-UI-Bold.woff2?v=3.0") format("woff2"),
   url("fonts/Inter-UI-Bold.woff?v=3.0") format("woff");
-}
+}**/
 
 @font-face {
   font-family: 'SanFranciscoDisplay-Regular';
@@ -95,7 +95,14 @@ table {
   font-family: 'SanFranciscoDisplay-Bold';
   font-style: bold;
   font-weight: 700;
-  src: url("/fonts/SanFranciscoDisplay-Bold.otf"),
+  src: url("/fonts/SanFranciscoDisplay-bold.otf"),
+}
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Semibold';
+  font-style: bold;
+  font-weight: 800;
+  src: url("/fonts/SanFranciscoDisplay-Semibold.otf"),
 }
 
 @font-face {
@@ -122,20 +129,20 @@ body {
 
 h1 {
   font-size: 34px;
-  font-family: 'SanFranciscoDisplay-Bold';
+  font-family: 'SanFranciscoDisplay-Semibold';
   letter-spacing: -0.015em;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 14px;
+  font-size: 13px;
   color: #F4927A;
   font-family: 'RobotoMono-Light';
 }
 
 h3 {
   font-size: 16px;
-  font-family: 'SanFranciscoDisplay-Bold';
+  font-family: 'SanFranciscoDisplay-Semibold';
   font-weight: bold;
 }
 

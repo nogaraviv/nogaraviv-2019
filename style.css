@@ -298,3 +298,11 @@ cursor: pointer;
     margin-top: 32px;
   }
 }
+
+::selection {
+  background: #3C3C38; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #3C3C38; /* Gecko Browsers */
+}

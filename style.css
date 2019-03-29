@@ -147,7 +147,10 @@ h3 {
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 28px;
+  font-family: 'SanFranciscoDisplay-Semibold';
+  letter-spacing: -0.015em;
+  font-weight: bold;
 }
 
 p {

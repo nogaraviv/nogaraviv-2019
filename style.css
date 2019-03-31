@@ -144,6 +144,14 @@ ul {
   margin-bottom: 56px;
 }
 
+.description-subtitle {
+  max-width: 545px;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
 .divider {
   border-top: 1px solid #EDEDED;
   margin-bottom: 56px;
@@ -228,4 +236,20 @@ ul {
 
 .page-footer > a {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 662px) {
+  h1 {
+    line-height: 1.2;
+  }
+
+  .projects > .row {
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .project {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
 }

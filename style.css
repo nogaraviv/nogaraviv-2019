@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  box-sizing: border-box;  
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -50,66 +51,18 @@ table {
 /******************************************************************************\
  * Fonts
 \******************************************************************************/
-/**@import url('https://rsms.me/inter/inter-ui.css');
-
 @font-face {
-  font-family: 'Inter-UI';
+  font-family: 'Calibre-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Inter-UI-Regular.woff2?v=3.0") format("woff2"),
-  url("fonts/Inter-UI-Regular.woff?v=3.0") format("woff");
+  src: url("/fonts/Calibre-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Inter-UI';
+  font-family: 'Calibre-Semibold';
   font-style: normal;
   font-weight: 500;
-  src: url("fonts/Inter-UI-Medium.woff2?v=3.0") format("woff2"),
-  url("fonts/Inter-UI-Medium.woff?v=3.0") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter-UI';
-  font-style: normal;
-  font-weight: 600;
-  src: url("fonts/Inter-UI-Semibold.woff2?v=3.0") format("woff2"),
-  url("fonts/Inter-UI-Semibold.woff?v=3.0") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter-UI';
-  font-style: normal;
-  font-weight: 700;
-  src: url("fonts/Inter-UI-Bold.woff2?v=3.0") format("woff2"),
-  url("fonts/Inter-UI-Bold.woff?v=3.0") format("woff");
-}**/
-
-@font-face {
-  font-family: 'SanFranciscoDisplay-Regular';
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/SanFranciscoDisplay-Regular.otf"),
-}
-
-@font-face {
-  font-family: 'SanFranciscoDisplay-Bold';
-  font-style: bold;
-  font-weight: 700;
-  src: url("/fonts/SanFranciscoDisplay-bold.otf"),
-}
-
-@font-face {
-  font-family: 'SanFranciscoDisplay-Semibold';
-  font-style: bold;
-  font-weight: 800;
-  src: url("/fonts/SanFranciscoDisplay-Semibold.otf"),
-}
-
-@font-face {
-  font-family: 'RobotoMono-Light';
-  font-style: bold;
-  font-weight: 700;
-  src: url("/fonts/RobotoMono-Light.ttf"),
+  src: url("/fonts/Calibre-Semibold.otf");
 }
 
 /******************************************************************************\
@@ -117,49 +70,42 @@ table {
 \******************************************************************************/
 
 body {
-  padding: 0px 24px;
-  margin: 96px auto 150px auto;
-  width: 100%;
-  max-width: 780px;
-  background-color: #FBF7F2;
-  color: #3C3C38;
-  font-family: 'SanFranciscoDisplay-Regular', Helvetica;
-  box-sizing: border-box;
+  background-color: #FAFAFA;
+  color: #1D2129;
+  font-family: 'Calibre-Regular', Helvetica;
 }
 
 h1 {
-  font-size: 34px;
-  font-family: 'SanFranciscoDisplay-Semibold';
-  letter-spacing: -0.015em;
-  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 16px;
 }
 
 h2 {
-  font-size: 14px;
-  color: #F4927A;
-  font-family: 'RobotoMono-Light';
+  font-size: 18px;
+  line-height: 1.38;
 }
 
 h3 {
-  font-size: 18px;
-  font-family: 'SanFranciscoDisplay-Semibold';
-  font-weight: bold;
+  font-size: 38px;
 }
 
 h4 {
-  font-size: 28px;
-  font-family: 'SanFranciscoDisplay-Semibold';
-  letter-spacing: -0.015em;
-  font-weight: bold;
+  font-size: 32px;
 }
 
+li,
+b,
 p {
-  font-size: 16px;
-  line-height:1.45;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 i {
   font-style: italic;
+}
+
+b {
+  font-family: 'Calibre-Semibold', Helvetica;
 }
 
 a {
@@ -168,144 +114,118 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+ul {
+  list-style: disc;
+  margin-left: 17px;
+}
+
+.text-underline {
   text-decoration: underline;
-}
-
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a,
-p > a {
-  display: inline;  
-  text-decoration: underline;
-}
-
-h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover,
-h5 > a:hover,
-h6 > a:hover,
-p > a:hover {
-  color: #3C3C38;
-  text-decoration: none;
-}
-
-.title {
-  line-height: 1.4;
-}
-
-.section {
-  margin-bottom: 80px;
-}
-.section:last-child {
-  margin-bottom: 0px;
-}
-
-.section > .header {
-  margin-bottom: 42px;
-}
-
-.section > .logo {
-text-decoration: none;
-cursor: pointer;
-}
-
-.section > .role {
-  margin-top: 32px;
-  margin-bottom: 16px;
-  color: #3C3C38;
-}
-
-.section > .subheader {
-  margin-top: 24px;
-  font-size: 28px;
-}
-
-.footer {
-  margin-top: 80px;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
+  padding: 80px 24px;
+  margin: 0px auto;
+  max-width: 662px;
+  width: 100%;
 }
 
-.prototype {
-  align-self: center;
-  max-width: 240px;
+.logo {
+  font-size: 18px;
+  color: #898985;
+  margin-bottom: 48px;
 }
 
-.phone {
-  align-self: center;
-  max-width: 300px;
+.logo:hover {
+  color: #1D2129; 
 }
 
-.content > * {
-  margin: 20px 0;
-}
-
-.content > *:last-child {
-  margin-bottom: 0px;
-}
-
-.project {
+.description  {
   margin-bottom: 56px;
 }
 
-.project > .name {
-  margin-bottom: 12px;
+.divider {
+  border-top: 1px solid #EDEDED;
+  margin-bottom: 56px;
 }
 
-.project > .description {
-  color: #3C3C38;
+.projects > .row {
+  margin-bottom: 48px;
 }
 
-.project:last-child {
+.projects > .row:last-child {
   margin-bottom: 0px;
 }
 
-.contact {
-  margin-top: 64px;
+.row {
+
+  display: flex;
+
 }
 
-.subtitle {
-  margin-top: 12px;
+.project {
+  flex:  1;
+  margin-right: 48px;
+}
+
+.projects-list > .project {
+  margin-bottom: 40px;
+}
+
+.project-list > .project:last-child {
+  margin-bottom: 0px;
+}
+
+.project:hover > .project-title {
+    text-decoration: underline;
+}
+
+.project:last-child {
+  margin-right: 0px;
+}
+
+.project-title {
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #898985;
+}
+
+.page-title {
+  margin-bottom: 42px;
+}
+
+.page-content > p {
+  margin-bottom: 32px;
+}
+
+.page-list {
+  margin-bottom: 24px;
+}
+
+.page-list > li {
+  margin-bottom: 8px;
+}
+
+.page-list > li:last-child {
+  margin-bottom: 0px;
+}
+
+.page-header {
+  margin: 48px 0px 24px;
 }
 
 .image {
   width: 100%;
-  height: auto;
+  margin-bottom: 24px;
 }
 
-.list {
-  list-style: disc;
-  margin-left: 20px;
+.page-footer {
+  margin-top: 64px;
+  font-size: 24px;
 }
 
-.list > li {
-  font-size: 16px;
-  line-height:1.45;
-  margin-bottom: 20px;
-}
-
-.list > li:last-child {
-  margin-bottom: 0px;
-}
-
-@media (max-width: 600px) {
-  .subtitle {
-    margin-top: 32px;
-  }
-}
-
-::selection {
-  background: #3C3C38; /* WebKit/Blink Browsers */
-  color: white;
-}
-::-moz-selection {
-  background: #3C3C38; /* Gecko Browsers */
+.page-footer > a {
+  text-decoration: underline;
 }
